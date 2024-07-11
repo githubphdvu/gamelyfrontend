@@ -18,7 +18,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import GamelyApi from "./api"
 import {Alert,Button,Card,Form,Container,Table,ListGroup,Image,Row,Col,Badge} from "react-bootstrap"
 import {useParams,useNavigate,createBrowserRouter,RouterProvider,Navigate,Outlet,useOutletContext,Link} from "react-router-dom"
-const BACKEND_URL =import.meta.env.VITE_REACT_APP_BASE_URL || "http://localhost:3001"
+const BACKEND_URL =import.meta.env.VITE_REACT_APP_BASE_URL
+// const BACKEND_URL ="http://localhost:3001"
 import LoadingSpinner from "./LoadingSpinner"
 //////////////////////////////////////////////////////////
 function CustomAlert({ type, title, messages, visible, onClose }) {//for SignupForm,LoginForm,ProfileForm
